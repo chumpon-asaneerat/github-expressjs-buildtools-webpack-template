@@ -102,7 +102,7 @@ const dist_libs = [
     /* flag-icon-css 3.x */
     { "route": "/dist", "path": "flag-icon-css-3.1.0" },
     /* moment */
-    { "route": "/dist/js", "path": "moment-2.22.2" },
+    { "route": "/dist/js", "path": "moment-2.24.0" },
     /* riotjs */
     { "route": "/dist/js", "path": "riotjs-3.13.2" },
     /* for access precompile riotjs component */
