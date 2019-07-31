@@ -5,7 +5,7 @@ module.exports = {
     entry: { 
         //main: './app/js/main.js',
         //index: './src/index.js',
-        app: './client/js/app/app.js'
+        app: './src/client/js/app.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
