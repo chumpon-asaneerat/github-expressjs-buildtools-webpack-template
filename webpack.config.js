@@ -18,7 +18,7 @@ module.exports = {
         minimize: true
     },
     module: {
-        rules: [{
+        rules: [/*{
             // riot tag (.riot, .tag) bundle setup
             test: /\.(riot|tag)$/i,
             exclude: /node_modules/,
@@ -26,7 +26,7 @@ module.exports = {
                 loader: '@riotjs/webpack-loader',
                 options: { hot: true }
             }]
-        }, {
+        }, */{
             // js bundle setup
             test: /\.js$/i,
             exclude: /node_modules/,
