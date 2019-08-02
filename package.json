@@ -1,7 +1,7 @@
 {
-  "name": "github-expressjs-buildtools-template",
+  "name": "github-expressjs-buildtools-webpack-template",
   "version": "1.0.0",
-  "description": "The github express.js with buildtools template",
+  "description": "The github express.js with buildtools with webpack template",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chumpon-asaneerat/github-expressjs-buildtools-template.git"
+    "url": "git+https://github.com/chumpon-asaneerat/github-expressjs-buildtools-webpack-template.git"
   },
   "author": "Chumpon Asaneerat",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/chumpon-asaneerat/github-expressjs-buildtools-template/issues"
+    "url": "https://github.com/chumpon-asaneerat/github-expressjs-buildtools-webpack-template/issues"
   },
-  "homepage": "https://github.com/chumpon-asaneerat/github-expressjs-buildtools-template#readme",
+  "homepage": "https://github.com/chumpon-asaneerat/github-expressjs-buildtools-webpack-template#readme",
   "devDependencies": {
     "@babel/core": "^7.5.5",
     "@babel/preset-env": "^7.5.5",
