@@ -143,6 +143,9 @@ const dist_libs = [
     { "route": "/dist/js", "path": "interactjs-1.6.2" },
     /* gifler */
     { "route": "/dist", "path": "gifler-0.3.0" },
+    /* videojs */
+    { "route": "/dist/css", "path": "videojs-7.6.5" },
+    { "route": "/dist/js", "path": "videojs-7.6.5" },
     /* for access precompile riotjs component */
     { "route": "/components", "path": "../../dist/component/riot" }
 ];
