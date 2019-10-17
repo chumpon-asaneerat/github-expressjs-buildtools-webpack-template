@@ -146,6 +146,9 @@ const dist_libs = [
     /* videojs */
     { "route": "/dist/css", "path": "videojs-7.6.5" },
     { "route": "/dist/js", "path": "videojs-7.6.5" },
+    /* jquery-easyui */
+    { "route": "/dist/css", "path": "jquery-easyui-1.8.7" },
+    { "route": "/dist/js", "path": "jquery-easyui-1.8.7" },
     /* for access precompile riotjs component */
     { "route": "/components", "path": "../../dist/component/riot" }
 ];
