@@ -139,6 +139,8 @@ const dist_libs = [
     /* highcharts */
     { "route": "/dist/css", "path": "highcharts-7.2.0/code/css" },
     { "route": "/dist/js", "path": "highcharts-7.2.0/code" },
+    /* interact.js */
+    { "route": "/dist/js", "path": "interactjs-1.6.2" },
     /* for access precompile riotjs component */
     { "route": "/components", "path": "../../dist/component/riot" }
 ];
