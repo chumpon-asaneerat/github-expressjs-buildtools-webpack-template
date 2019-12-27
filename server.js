@@ -248,8 +248,21 @@ let swaggerOpts = { explorer: false };
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument, swaggerOpts));
 */
 
+const getargs = () => {
+    let obj = {}
+    process.argv.forEach(arg => {
+        let pairs = arg.split('=')
+        if (pairs.length === 2) {
+            obj[pairs[0].toLowerCase()] = pairs[1]
+        }
+    })
+    return obj;
+}
+
 const server = app.listen(PORT, () => {
-    console.log(`${APPNAME} listen on port: ${PORT}`);
+    let args = getargs();
+    let portNumber = args.port || PORT;
+    console.log(`${APPNAME} listen on port: ${portNumber}`);
 });
 
 //## [ Status Monitor ] ===================================================##
