@@ -151,6 +151,8 @@ const dist_libs = [
     /* jquery-easyui */
     { "route": "/dist/css", "path": "jquery-easyui-1.8.7" },
     { "route": "/dist/js", "path": "jquery-easyui-1.8.7" },
+    /* signature pad */
+    { "route": "/dist/js", "path": "signature-pad-3.0.0.beta.3" },
     /* for access precompile riotjs component */
     { "route": "/components", "path": "../../dist/component/riot" }
 ];
