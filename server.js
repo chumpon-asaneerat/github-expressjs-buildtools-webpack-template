@@ -126,7 +126,8 @@ const dist_libs = [
     //{ "route": "/dist", "path": "tabulator-4.4.1" },
     { "route": "/dist", "path": "tabulator-4.6.0" },
     /* ace */
-    { "route": "/dist/js", "path": "ace-1.4.5" },
+    //{ "route": "/dist/js", "path": "ace-1.4.5" },
+    { "route": "/dist/js", "path": "ace-1.4.10" },
     /* simplebar */
     { "route": "/dist", "path": "simplebar-4.1.0" },
     /* overlay-scrollbar */
