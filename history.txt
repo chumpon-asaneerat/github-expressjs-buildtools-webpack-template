@@ -1,5 +1,11 @@
 -------------------------------------------------------------------------------------------------
 [commit]
+Update 2021-02-25 #2
+- Update server.js
+  - change auditFile (to logger-audit.json).
+- Update .gitignore
+
+[commit]
 Update 2021-02-25 #1
 - Update history.txt
 
