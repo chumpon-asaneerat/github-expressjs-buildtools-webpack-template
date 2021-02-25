@@ -11,6 +11,8 @@ const favicon = require("serve-favicon");
 const swaggerUi = require('swagger-ui-express');
 const swaggerJSDoc = require('swagger-jsdoc');
 
+//#region Logger
+
 const winston = require('winston');
 const { createLogger, format, transports } = require('winston');
 const { combine, timestamp, label, printf, colorize, prettyPrint } = format;
@@ -22,6 +24,7 @@ const logFormat = printf(({ level, message, label, timestamp }) => {
 
 const DailyRotateFile = require('winston-daily-rotate-file');
 const log_file_opts =  {
+    auditFile: 'logger-audit.json',
     filename: 'application-%DATE%.log',
     datePattern: 'YYYY-MM-DD',
     zippedArchive: true,
@@ -47,6 +50,8 @@ const logger = createLogger({
         new DailyRotateFile(log_file_opts)
     ]        
 })
+
+//#endregion
 
 const APPNAME = "Express Project";
 const PORT = 3000;
@@ -115,44 +120,6 @@ app.use(cookieparser("YOUR_SECURE_KEY@123"));
 
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({ extended: true }));
-
-const winston = require('winston');
-const { createLogger, format, transports } = require('winston');
-const { combine, timestamp, label, printf, colorize, prettyPrint } = format;
-const colorizer = winston.format.colorize();
-const logFormat = printf(({ level, message, label, timestamp }) => {
-    //return colorizer.colorize(level, `${timestamp} ${level}: ${message}`);
-    return `${timestamp} ${level}: ${message}`;
-});
-
-const DailyRotateFile = require('winston-daily-rotate-file');
-const log_file_opts =  {
-    auditFile: 'logger-audit.json',
-    filename: 'application-%DATE%.log',
-    datePattern: 'YYYY-MM-DD',
-    zippedArchive: true,
-    maxSize: '20m',
-    maxFiles: '14d'
-}
-
-const logger = createLogger({
-    // general format.
-    format: combine(
-        timestamp(),
-        logFormat),
-    transports: [
-        new transports.Console({
-            // custom format for console.
-            format: combine(
-                colorize({all: true}),
-                timestamp(),
-                prettyPrint(),
-                logFormat)
-        }),
-        //new transports.File({ filename: 'combined.log' }),
-        new DailyRotateFile(log_file_opts)
-    ]        
-})
 
 const iconpath = path.join(__dirname, "public", "favicon.ico");
 app.use(favicon(iconpath));
@@ -255,7 +222,6 @@ app.all("/", (req, res) => {
 
     res.status(200).send(`It's work!!!`);
 });
-
 app.get("/:file", (req, res, next) => {
     if (req.params.file === 'index.html') {
         res.sendFile(path.join(__dirname, req.params.file));

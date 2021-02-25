@@ -1,5 +1,10 @@
 -------------------------------------------------------------------------------------------------
 [commit]
+Update 2021-02-25 #5
+- Update server.js
+  - Add Logger region
+
+[commit]
 Update 2021-02-25 #4
 - Update api.test.rest
   - Add GET/POST Test Method (default route).
