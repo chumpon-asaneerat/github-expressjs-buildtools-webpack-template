@@ -1,5 +1,11 @@
 -------------------------------------------------------------------------------------------------
 [commit]
+Update 2021-02-25 #7
+- Update server.js
+  - Add logger.stream method (for morgan)
+  - Map morgan stream and used 'short' token instead of 'dev'
+
+[commit]
 Update 2021-02-25 #6
 - Update server.js
   - Update Logger code (add sample datePattern, set zippedArchive: false)
