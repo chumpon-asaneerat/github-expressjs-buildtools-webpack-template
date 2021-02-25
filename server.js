@@ -16,10 +16,11 @@ const swaggerJSDoc = require('swagger-jsdoc');
 const winston = require('winston');
 const { createLogger, format, transports } = require('winston');
 const { combine, timestamp, label, printf, colorize, prettyPrint } = format;
-const colorizer = winston.format.colorize();
-const logFormat = printf(({ level, message, label, timestamp }) => {
+//const colorizer = winston.format.colorize();
+const logFormat = printf((info, opts) => {
     //return colorizer.colorize(level, `${timestamp} ${level}: ${message}`);
-    return `${timestamp} ${level}: ${message}`;
+    //return `${timestamp} ${level}: ${message}`;
+    return `${info.timestamp} ${info.level}: ${info.message}`;
 });
 
 const DailyRotateFile = require('winston-daily-rotate-file');

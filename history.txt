@@ -1,5 +1,11 @@
 -------------------------------------------------------------------------------------------------
 [commit]
+Update 2021-02-25 #8
+- Update server.js
+  - logger remove unused variable(s)
+  - updae printf code.
+
+[commit]
 Update 2021-02-25 #7
 - Update server.js
   - Add logger.stream method (for morgan)
