@@ -1,5 +1,12 @@
 -------------------------------------------------------------------------------------------------
 [commit]
+Update 2021-02-25 #4
+- Update api.test.rest
+  - Add GET/POST Test Method (default route).
+- Update server.js
+  - default route allow all http methods.
+
+[commit]
 Update 2021-02-25 #3
 - Add api.test.rest
 

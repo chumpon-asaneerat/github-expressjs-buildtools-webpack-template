@@ -244,7 +244,7 @@ dist_libs.forEach(element => {
     dist_lib(app, element.route, element.path);
 });
 
-app.get("/", (req, res) => {
+app.all("/", (req, res) => {
     logger.log({
         level: 'info',
         message: 'Hello distributed log files!'
