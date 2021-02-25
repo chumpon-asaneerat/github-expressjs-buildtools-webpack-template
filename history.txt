@@ -1,5 +1,9 @@
 -------------------------------------------------------------------------------------------------
 [commit]
+Update 2021-02-25 #3
+- Add api.test.rest
+
+[commit]
 Update 2021-02-25 #2
 - Update server.js
   - change auditFile (to logger-audit.json).
